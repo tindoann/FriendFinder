@@ -5,9 +5,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Friend Finder</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <title>Friend Finder</title>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <!-- jQuery Modal -->
 </head>
 
 <body>
@@ -30,8 +36,8 @@
       <div class="form group col-lg-12">
 
         <div>
-          <h4>Question 1</h4>
-          <p>You easily agree with others</p>
+          <h4 class="header mt-3">Question 1</h4>
+          <p class="para mb-0">You easily agree with others</p>
           <select class="chosen-select" id="q1">
             <option value="one">1 (Strongly Disagree)</option>
             <option value="two">2</option>
@@ -41,11 +47,9 @@
           </select>
         </div>
 
-
-
         <div>
-          <h4>Question 2</h4>
-          <p>How many best friends have you had?</p>
+          <h4 class="header mt-3">Question 2</h4>
+          <p class="para mb-0">How many best friends have you had?</p>
           <select class="chosen-select" id="q2">
             <option value="one">1 (Strongly Disagree)</option>
             <option value="two">2</option>
@@ -56,8 +60,8 @@
         </div>
 
         <div>
-          <h4>Question 3</h4>
-          <p>You are easily annoyed by things</p>
+          <h4 class="header mt-3">Question 3</h4>
+         <p class="para mb-0">You are easily annoyed by things</p>
           <select class="chosen-select" id="q3">
             <option value="one">1 (Strongly Disagree)</option>
             <option value="two">2</option>
@@ -69,8 +73,8 @@
 
 
         <div>
-          <h4>Question 4</h4>
-          <p>Friendship and family are are crucial part of your life</p>
+          <h4 class="header mt-3">Question 4</h4>
+         <p class="para mb-0">Friendship and family are are crucial part of your life</p>
           <select class="chosen-select" id="q4">
             <option value="one">1 (Strongly Disagree)</option>
             <option value="two">2</option>
@@ -81,9 +85,9 @@
         </div>
 
         <div>
-          <h4>Question 5</h4>
+          <h4 class="header mt-3">Question 5</h4>
           <select class="chosen-select" id="q5">
-            <p>You are a creative person who is interested in art</p>
+            <p class="para mb-0">You are a creative person who is interested in art</p>
             <option value="one">1 (Strongly Disagree)</option>
             <option value="two">2</option>
             <option value="three">3</option>
@@ -93,8 +97,8 @@
         </div>
 
         <div>
-          <h4>Question 6</h4>
-          <p>At a party, you are excited to meet new people</p>
+          <h4 class="header mt-3">Question 6</h4>
+          <p class="para mb-0">At a party, you are excited to meet new people</p>
           <select class="chosen-select" id="q6">
             <option value="one">1 (Strongly Disagree)</option>
             <option value="two">2</option>
@@ -105,8 +109,8 @@
         </div>
 
         <div>
-          <h4>Question 7</h4>
-          <p>You are curious person by nature</p>
+          <h4 class="header mt-3">Question 7</h4>
+          <p class="para mb-0">You are curious person by nature</p>
           <select class="chosen-select" id="q7">
             <option value="one">1 (Strongly Disagree)</option>
             <option value="two">2</option>
@@ -117,9 +121,9 @@
         </div>
 
         <div>
-          <h4>Question 8</h4>
+          <h4 class="header mt-3">Question 8</h4>
           <select class="chosen-select" id="q8">
-            <p>On most ocassions, you rather socialize</p>
+            <p class="para mb-0">On most ocassions, you rather socialize</p>
             <option value="one">1 (Strongly Disagree)</option>
             <option value="two">2</option>
             <option value="three">3</option>
@@ -129,8 +133,8 @@
         </div>
 
         <div>
-          <h4>Question 9</h4>
-          <p>How many hobbies do you have?</p>
+          <h4 class="header mt-3">Question 9</h4>
+          <p class="para mb-0">How many hobbies do you have?</p>
           <select class="chosen-select" id="q9">
             <option value="one">1 (Strongly Disagree)</option>
             <option value="two">2</option>
@@ -141,9 +145,9 @@
         </div>
 
         <div>
-          <h4>Question 10</h4>
-          <p>How frequently do you drink alcohol per week?</p>
-          <select class="chosen-select" id="q10">
+          <h4 class="header mt-3">Question 10</h4>
+          <p class="para mb-0">How frequently do you drink alcohol per week?</p>
+          <select class="chosen-select mb-8" id="q10">
             <option value="one">1 (Strongly Disagree)</option>
             <option value="two">2</option>
             <option value="three">3</option>
@@ -152,46 +156,53 @@
           </select>
         </div>
       </div>
-    </div>
 
     <!-- Submit Button -->
-    <button type="submit" class="btn btn-primary btn-lg btn-block" id="submitBtn"><i class="fa fa-check-circle"
+    <button type="submit" class="btn mt-10 mb-10 btn-primary btn-lg btn-block" id="submitBtn"><i class="fa fa-check-circle"
         aria-hidden="true"></i>
       Submit</button>
 
 
-    <!-- Trigger the modal with a button -->
-    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
 
-    <!-- Modal -->
+    <!-- Modal from W3 -->
     <div id="myModal" class="modal fade" role="dialog">
       <div class="modal-dialog">
 
         <!-- Modal content-->
-        <div class="modal-content">
+        <div class="modal-content text-center">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4 class="modal-title">Your Best Match</h4>
+            <h3 class="modal-title" id="match-header">Your match</h3>
           </div>
-          <div class="modal-body">
-            <h4 id="matchName"></h4>
-            <img src="" id="matchPhoto" alt="Match Photo" width="300px" height="500px">
+          <div class="modal-body text-center">
+            <p id="matchName"></p>
+            <img id="matchPhoto" alt="match image" width="200px" height="300px">
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
           </div>
         </div>
-
       </div>
     </div>
+
   </div>
-  
+</div>
+
   <script type="text/javascript">
-    $('submitBtn').on('click', function (event) {
+  
+  // In this code below we create the Front-end JavaScript which "POSTS" our form data to our express server.
+  // In essence, when the user hits submit, jQuery grabs all of the fields then sends a post request to our api
+  // Our api recognizes the route (/api/friends)... and then runs the associated code (found in api-routes.js).
+  // In this case the associated code "saves" the data to the friends.js file 
+
+    $('#submitBtn').on('click', function (event) {
       event.preventDefault();
+
+      // Here we grab the form elements and convert the score string into numbers. 
+
       let newFriend = {
         name: $('#name').val().trim(),
-        image: $('#photo').val.trim(),
+        image: $('#photo').val().trim(),
         scores: [
           parseInt($('#q1').val().trim()),
           parseInt($('#q2').val().trim()),
@@ -202,37 +213,39 @@
           parseInt($('#q7').val().trim()),
           parseInt($('#q8').val().trim()),
           parseInt($('#q9').val().trim()),
-          parseInt($('#q110').val().trim())
+          parseInt($('#q10').val().trim())
         ]
       };
 
-      $.post('/api/friends', newFriend,
-      function (data) {
-        if (data) {
-          $('#matchName').innerHTML(data.name);
-          $('#matchPhoto').attr('src', data.image);
-          $('.modal').modal();
+      console.log(newFriend);
 
-          // Clear the form when submitting
-          $("#name").val("");
-          $("#photo").val("");
-          $("#q1").val("");
-          $("#q2").val("");
-          $("#q3").val("");
-          $("#q4").val("");
-          $("#q5").val("");
-          $("#q6").val("");
-          $("#q7").val("");
-          $("#q8").val("");
-          $("#q9").val("");
-          $("#q10").val("");
-        } else {
-            alert("Sorry we could not find you a new besty");
-        }
-      })
+      $.post('/api/friends', newFriend,
+        function (data) {
+          if (data) {
+            $('#matchName').text(data.name);
+            $('#matchPhoto').attr('src', data.image);
+            $('#myModal').modal();
+
+  // Clear the form when submitting
+
+            $("#name").val("");
+            $("#photo").val("");
+            $("#q1").val("");
+            $("#q2").val("");
+            $("#q3").val("");
+            $("#q4").val("");
+            $("#q5").val("");
+            $("#q6").val("");
+            $("#q7").val("");
+            $("#q8").val("");
+            $("#q9").val("");
+            $("#q10").val("");
+          } else {
+            $("#match-header").text("Sorry, would could not find a match"); 
+          }
+        })
     });
-    </script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  </body>
-  </html>
+  </script>
+</body>
+
+</html>
