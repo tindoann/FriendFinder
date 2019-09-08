@@ -4,6 +4,7 @@ const express = require("express");
 const path = require("path");
 
 // Sets up the Express App
+// process.env.PORT - lets heroku set the default port when deploying app
 // =============================================================
 const app = express();
 const PORT = process.env.PORT || 8080;
