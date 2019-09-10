@@ -31,6 +31,7 @@ module.exports = function(app) {
 
   // Initialize the newFriend object
     let newFriend = req.body;
+    console.log(newFriend)
     let friendInput = newFriend.scores; 
     let match = {
       name: '', 

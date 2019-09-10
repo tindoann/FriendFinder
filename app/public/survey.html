@@ -19,214 +19,229 @@
 <body>
 
   <div class="container">
-    <h1>Survey Questions</h1>
-    <hr>
-    <h3>About You</h3>
-    <br>
-    <label class="active" for="name">Name (required)</label>
-    <input id="name" type="text" class="validate" required>
-    <br>
-    <label class="active" for="name">Link to Photo Image (required)</label>
-    <input id="photo" type="text" class="validate" required>
-
-    <!-- Survey Questions -->
 
     <div class="row">
 
       <div class="form group col-lg-12">
 
-        <div>
-          <h4 class="header mt-3">Question 1</h4>
-          <p class="para mb-0">You easily agree with others</p>
-          <select class="chosen-select" id="q1">
-            <option value="one">1 (Strongly Disagree)</option>
-            <option value="two">2</option>
-            <option value="three">3</option>
-            <option value="four">4</option>
-            <option value="five">5 (Strongly Agree)</option>
-          </select>
-        </div>
 
-        <div>
-          <h4 class="header mt-3">Question 2</h4>
-          <p class="para mb-0">How many best friends have you had?</p>
-          <select class="chosen-select" id="q2">
-            <option value="one">1 (Strongly Disagree)</option>
-            <option value="two">2</option>
-            <option value="three">3</option>
-            <option value="four">4</option>
-            <option value="five">5 (Strongly Agree)</option>
-          </select>
-        </div>
+        <!-- Survey Questions -->
 
-        <div>
-          <h4 class="header mt-3">Question 3</h4>
-         <p class="para mb-0">You are easily annoyed by things</p>
-          <select class="chosen-select" id="q3">
-            <option value="one">1 (Strongly Disagree)</option>
-            <option value="two">2</option>
-            <option value="three">3</option>
-            <option value="four">4</option>
-            <option value="five">5 (Strongly Agree)</option>
-          </select>
-        </div>
+        <form role="form" id="friendForm">
 
+          <h1>Survey Questions</h1>
+          <hr>
+          <h3>About You</h3>
+          <br>
+          <label class="active" for="name">Name (required)</label>
+          <input id="name" type="text" class="validate" required>
+          <br>
+          <label class="active" for="name">Link to Photo Image (required)</label>
+          <input id="photo" type="text" class="validate" required>
 
-        <div>
-          <h4 class="header mt-3">Question 4</h4>
-         <p class="para mb-0">Friendship and family are are crucial part of your life</p>
-          <select class="chosen-select" id="q4">
-            <option value="one">1 (Strongly Disagree)</option>
-            <option value="two">2</option>
-            <option value="three">3</option>
-            <option value="four">4</option>
-            <option value="five">5 (Strongly Agree)</option>
-          </select>
-        </div>
-
-        <div>
-          <h4 class="header mt-3">Question 5</h4>
-          <select class="chosen-select" id="q5">
-            <p class="para mb-0">You are a creative person who is interested in art</p>
-            <option value="one">1 (Strongly Disagree)</option>
-            <option value="two">2</option>
-            <option value="three">3</option>
-            <option value="four">4</option>
-            <option value="five">5 (Strongly Agree)</option>
-          </select>
-        </div>
-
-        <div>
-          <h4 class="header mt-3">Question 6</h4>
-          <p class="para mb-0">At a party, you are excited to meet new people</p>
-          <select class="chosen-select" id="q6">
-            <option value="one">1 (Strongly Disagree)</option>
-            <option value="two">2</option>
-            <option value="three">3</option>
-            <option value="four">4</option>
-            <option value="five">5 (Strongly Agree)</option>
-          </select>
-        </div>
-
-        <div>
-          <h4 class="header mt-3">Question 7</h4>
-          <p class="para mb-0">You are curious person by nature</p>
-          <select class="chosen-select" id="q7">
-            <option value="one">1 (Strongly Disagree)</option>
-            <option value="two">2</option>
-            <option value="three">3</option>
-            <option value="four">4</option>
-            <option value="five">5 (Strongly Agree)</option>
-          </select>
-        </div>
-
-        <div>
-          <h4 class="header mt-3">Question 8</h4>
-          <select class="chosen-select" id="q8">
-            <p class="para mb-0">On most ocassions, you rather socialize</p>
-            <option value="one">1 (Strongly Disagree)</option>
-            <option value="two">2</option>
-            <option value="three">3</option>
-            <option value="four">4</option>
-            <option value="five">5 (Strongly Agree)</option>
-          </select>
-        </div>
-
-        <div>
-          <h4 class="header mt-3">Question 9</h4>
-          <p class="para mb-0">How many hobbies do you have?</p>
-          <select class="chosen-select" id="q9">
-            <option value="one">1 (Strongly Disagree)</option>
-            <option value="two">2</option>
-            <option value="three">3</option>
-            <option value="four">4</option>
-            <option value="five">5 (Strongly Agree)</option>
-          </select>
-        </div>
-
-        <div>
-          <h4 class="header mt-3">Question 10</h4>
-          <p class="para mb-0">How frequently do you drink alcohol per week?</p>
-          <select class="chosen-select mb-8" id="q10">
-            <option value="one">1 (Strongly Disagree)</option>
-            <option value="two">2</option>
-            <option value="three">3</option>
-            <option value="four">4</option>
-            <option value="five">5 (Strongly Agree)</option>
-          </select>
-        </div>
-      </div>
-
-    <!-- Submit Button -->
-    <button type="submit" class="btn mt-10 mb-10 btn-primary btn-lg btn-block" id="submitBtn"><i class="fa fa-check-circle"
-        aria-hidden="true"></i>
-      Submit</button>
-
-
-
-    <!-- Modal from W3 -->
-    <div id="myModal" class="modal fade" role="dialog">
-      <div class="modal-dialog">
-
-        <!-- Modal content-->
-        <div class="modal-content text-center">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h3 class="modal-title" id="match-header">Your match</h3>
+          <div>
+            <h4 class="header mt-3">Question 1</h4>
+            <p class="para mb-0">You easily agree with others</p>
+            <select class="chosen-select" id="q1">
+              <option value="one">1 (Strongly Disagree)</option>
+              <option value="two">2</option>
+              <option value="three">3</option>
+              <option value="four">4</option>
+              <option value="five">5 (Strongly Agree)</option>
+            </select>
           </div>
-          <div class="modal-body text-center">
-            <p id="matchName"></p>
-            <img id="matchPhoto" alt="match image" width="200px" height="300px">
+
+          <div>
+            <h4 class="header mt-3">Question 2</h4>
+            <p class="para mb-0">How many best friends have you had?</p>
+            <select class="chosen-select" id="q2">
+              <option value="one">1 (Strongly Disagree)</option>
+              <option value="two">2</option>
+              <option value="three">3</option>
+              <option value="four">4</option>
+              <option value="five">5 (Strongly Agree)</option>
+            </select>
           </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+          <div>
+            <h4 class="header mt-3">Question 3</h4>
+            <p class="para mb-0">You are easily annoyed by things</p>
+            <select class="chosen-select" id="q3">
+              <option value="one">1 (Strongly Disagree)</option>
+              <option value="two">2</option>
+              <option value="three">3</option>
+              <option value="four">4</option>
+              <option value="five">5 (Strongly Agree)</option>
+            </select>
           </div>
+
+
+          <div>
+            <h4 class="header mt-3">Question 4</h4>
+            <p class="para mb-0">Friendship and family are are crucial part of your life</p>
+            <select class="chosen-select" id="q4">
+              <option value="one">1 (Strongly Disagree)</option>
+              <option value="two">2</option>
+              <option value="three">3</option>
+              <option value="four">4</option>
+              <option value="five">5 (Strongly Agree)</option>
+            </select>
+          </div>
+
+          <div>
+            <h4 class="header mt-3">Question 5</h4>
+            <select class="chosen-select" id="q5">
+              <p class="para mb-0">You are a creative person who is interested in art</p>
+              <option value="one">1 (Strongly Disagree)</option>
+              <option value="two">2</option>
+              <option value="three">3</option>
+              <option value="four">4</option>
+              <option value="five">5 (Strongly Agree)</option>
+            </select>
+          </div>
+
+          <div>
+            <h4 class="header mt-3">Question 6</h4>
+            <p class="para mb-0">At a party, you are excited to meet new people</p>
+            <select class="chosen-select" id="q6">
+              <option value="one">1 (Strongly Disagree)</option>
+              <option value="two">2</option>
+              <option value="three">3</option>
+              <option value="four">4</option>
+              <option value="five">5 (Strongly Agree)</option>
+            </select>
+          </div>
+
+          <div>
+            <h4 class="header mt-3">Question 7</h4>
+            <p class="para mb-0">You are curious person by nature</p>
+            <select class="chosen-select" id="q7">
+              <option value="one">1 (Strongly Disagree)</option>
+              <option value="two">2</option>
+              <option value="three">3</option>
+              <option value="four">4</option>
+              <option value="five">5 (Strongly Agree)</option>
+            </select>
+          </div>
+
+          <div>
+            <h4 class="header mt-3">Question 8</h4>
+            <select class="chosen-select" id="q8">
+              <p class="para mb-0">On most ocassions, you rather socialize</p>
+              <option value="one">1 (Strongly Disagree)</option>
+              <option value="two">2</option>
+              <option value="three">3</option>
+              <option value="four">4</option>
+              <option value="five">5 (Strongly Agree)</option>
+            </select>
+          </div>
+
+          <div>
+            <h4 class="header mt-3">Question 9</h4>
+            <p class="para mb-0">How many hobbies do you have?</p>
+            <select class="chosen-select" id="q9">
+              <option value="one">1 (Strongly Disagree)</option>
+              <option value="two">2</option>
+              <option value="three">3</option>
+              <option value="four">4</option>
+              <option value="five">5 (Strongly Agree)</option>
+            </select>
+          </div>
+
+          <div>
+            <h4 class="header mt-3">Question 10</h4>
+            <p class="para mb-0">How frequently do you drink alcohol per week?</p>
+            <select class="chosen-select mb-8" id="q10">
+              <option value="one">1 (Strongly Disagree)</option>
+              <option value="two">2</option>
+              <option value="three">3</option>
+              <option value="four">4</option>
+              <option value="five">5 (Strongly Agree)</option>
+            </select>
+          </div>
+
+          <!-- Submit Button -->
+          <button type="submit" class="btn mt-10 mb-10 btn-primary submit btn-lg btn-block" data-toggle="modal"
+            data-target=".bd-example-modal-lg" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i>
+            Submit</button>
+        </form>
+
+        <!-- Modal from W3 -->
+        <div id="myModal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog modal" role="document">
+
+            <!-- Modal content-->
+            <div class="modal-content text-center">
+              <div class="modal-header">
+                <h3 class="modal-title" id="match-header">Your match</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body text-center">
+                    <p id="matchName"></p>
+                    <img id="matchPhoto" alt="match image" width="200px" height="300px">
+              </div>
+              <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" id="modal-close" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    
+
         </div>
       </div>
     </div>
 
-  </div>
-</div>
+    <script type="text/javascript">
+      // In this code below we create the Front-end JavaScript which "POSTS" our form data to our express server.
+      // In essence, when the user hits submit, jQuery grabs all of the fields then sends a post request to our api
+      // Our api recognizes the route (/api/friends)... and then runs the associated code (found in api-routes.js).
+      // In this case the associated code "saves" the data to the friends.js file 
 
-  <script type="text/javascript">
-  
-  // In this code below we create the Front-end JavaScript which "POSTS" our form data to our express server.
-  // In essence, when the user hits submit, jQuery grabs all of the fields then sends a post request to our api
-  // Our api recognizes the route (/api/friends)... and then runs the associated code (found in api-routes.js).
-  // In this case the associated code "saves" the data to the friends.js file 
+      $('#submit').on('click', function (event) {
 
-    $('#submitBtn').on('click', function (event) {
-      event.preventDefault();
+        // Prevent the submission of a form 
+        event.preventDefault();
 
-      // Here we grab the form elements and convert the score string into numbers. 
+        // We create the new object that will be stored in friends.js, it contains the user's name, photo, and score
+        let newFriend = {
+          name: $('#name').val().trim(),
+          photo: $('#photo').val().trim(),
+          scores: [
+            $('#q1').val().trim(),
+            $('#q2').val().trim(),
+            $('#q3').val().trim(),
+            $('#q4').val().trim(),
+            $('#q5').val().trim(),
+            $('#q6').val().trim(),
+            $('#q7').val().trim(),
+            $('#q8').val().trim(),
+            $('#q9').val().trim(),
+            $('#q10').val().trim()
+          ]
+        };
 
-      let newFriend = {
-        name: $('#name').val().trim(),
-        image: $('#photo').val().trim(),
-        scores: [
-          parseInt($('#q1').val().trim()),
-          parseInt($('#q2').val().trim()),
-          parseInt($('#q3').val().trim()),
-          parseInt($('#q4').val().trim()),
-          parseInt($('#q5').val().trim()),
-          parseInt($('#q6').val().trim()),
-          parseInt($('#q7').val().trim()),
-          parseInt($('#q8').val().trim()),
-          parseInt($('#q9').val().trim()),
-          parseInt($('#q10').val().trim())
-        ]
-      };
+        console.log(newFriend)
 
-      console.log(newFriend);
 
-      $.post('/api/friends', newFriend,
-        function (data) {
-          if (data) {
-            $('#matchName').text(data.name);
-            $('#matchPhoto').attr('src', data.image);
-            $('#myModal').modal();
+        // Send the newFriend object to the api and return a modal containing the most compatiable friend
 
-  // Clear the form when submitting
+        $.post('/api/friends', newFriend)
+          .done(function (data) {
+
+            if (data) {
+              $('#matchName').text(data.name);
+              $('#matchPhoto').attr('src', data.photo).addClass('newFriendPhoto');
+              $('#myModal').modal('toggle'); 
+            } else {
+              $("#match-header").text("Sorry, would could not find a match")
+            }
+            
+            console.log( $('#matchName').text(data.name));
+            // Clear the form when submitting
 
             $("#name").val("");
             $("#photo").val("");
@@ -240,12 +255,14 @@
             $("#q8").val("");
             $("#q9").val("");
             $("#q10").val("");
-          } else {
-            $("#match-header").text("Sorry, would could not find a match")
-          }
-        })
-    });
-  </script>
-</body>
+          })
+      });
 
-</html>
+    $("#modal-close").on("click", function() {
+      // $('#myModal').modal('show')
+    }); 
+
+    </script>
+    </body>
+
+    </html>
