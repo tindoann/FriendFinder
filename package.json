@@ -17,5 +17,8 @@
   },
   "homepage": "https://github.com/tindoann/FriendFinder#readme",
   "keywords": [],
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
